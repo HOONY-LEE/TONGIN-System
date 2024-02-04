@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +9,7 @@ const Wrapper = styled.div`
 export default function LoadingScreen() {
   return (
     <Wrapper>
-      <h1>로딩중...</h1>
+      <h1>로딩중... </h1>
     </Wrapper>
   );
 }

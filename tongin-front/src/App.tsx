@@ -50,13 +50,12 @@ const router = createBrowserRouter([
 ]);
 
 const GlobalStyles = createGlobalStyle`
-/* ${reset} */
+${reset} 
 * {
   box-sizing: border-box;
 }
 body {
-  background-color: #FAFAFA;
-  color: red;
+  background-color: #fafafa;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 `;
