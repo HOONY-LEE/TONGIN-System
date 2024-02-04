@@ -1,11 +1,10 @@
-
 import {
   FlexBox,
   FlexBoxRow,
   FlexX,
   FlexXY,
   FlexY,
-} from "../components/home/common/flexBox";
+} from "../components/common/flexBox";
 import CustomButton from "../components/common/customButton";
 import InvoiceListComponent from "../components/home/invoiceListComponent";
 import SearchComponent from "../components/home/searchComponent";

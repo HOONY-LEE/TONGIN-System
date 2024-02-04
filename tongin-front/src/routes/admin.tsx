@@ -1,33 +1,36 @@
 import styled from "styled-components";
-import * as S from "../styles/admin.styled";
+import CustomButton from "../components/common/customButton";
+import { useNavigate } from "react-router-dom";
+import { Container, Wrapper } from "../components/common/flexWrapper";
 
-const Container = styled.div`
+const BtnBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 82%;
-  height: 60vh;
-  outline: 1px dashed green;
-`;
-
-const Button = styled.button`
-  width: 180px;
-  height: 50px;
+  justify-content: space-between;
+  height: 30%;
+  margin-top: 20vh;
 `;
 
 export default function Admin() {
+  const navigate = useNavigate();
+
+  const moveToCreate = () => {
+    navigate("/admin/create-account");
+  };
+
   return (
     <>
       <Container>
         <Wrapper>
-          <h1>관리자페이지</h1>
-          <Button>사원 추가하기</Button>
+          <BtnBox>
+            <CustomButton
+              text={"사원 관리"}
+              onClick={moveToCreate}
+            ></CustomButton>
+            <CustomButton text={"관리자 메뉴1"}></CustomButton>
+            <CustomButton text={"관리자 메뉴2"}></CustomButton>
+          </BtnBox>
         </Wrapper>
       </Container>
     </>
