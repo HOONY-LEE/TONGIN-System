@@ -8,17 +8,20 @@ import CreateAccount from "./routes/create-account";
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import LoadingScreen from "./components/loading-screen";
-import ProtectedRoute from "./components/protected-route";
+import ProtectedRouteUser from "./components/protected-route-user";
 import Admin from "./routes/admin";
 import Invoice from "./routes/invoice";
+import ProtectedRouteAdmin from "./components/protected-route-admin";
+import AdminLayout from "./components/adminLayout";
+import "./static/fonts/font.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <ProtectedRoute>
+      <ProtectedRouteUser>
         <Layout></Layout>
-      </ProtectedRoute>
+      </ProtectedRouteUser>
     ),
     children: [
       {
@@ -40,24 +43,34 @@ const router = createBrowserRouter([
     element: <Login></Login>,
   },
   {
-    path: "/create-account",
-    element: <CreateAccount></CreateAccount>,
-  },
-  {
     path: "/admin",
-    element: <Admin></Admin>,
+    element: (
+      <ProtectedRouteAdmin>
+        <AdminLayout></AdminLayout>
+      </ProtectedRouteAdmin>
+    ),
+    children: [
+      {
+        path: "",
+        element: <Admin></Admin>,
+      },
+      {
+        path: "create-account",
+        element: <CreateAccount></CreateAccount>,
+      },
+    ],
   },
 ]);
 
 const GlobalStyles = createGlobalStyle`
-/* ${reset} */
+${reset}
 * {
   box-sizing: border-box;
 }
 body {
-  background-color: #FAFAFA;
-  color: red;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #fafafa;
+  color: black;
+  font-family: 'Pretendard';
 }
 `;
 

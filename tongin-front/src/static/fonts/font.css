@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Pretendard";
+  font-display: fallback;
+
+  src: url("./Pretendard-Black.otf") format("opentype");
+
+  /* 사용할 폰트의 기본 스타일 */
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-display: fallback;
+
+  src: url("./Pretendard-ExtraBold.otf") format("opentype");
+  /* 사용할 폰트의 기본 스타일 */
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-display: fallback;
+
+  src: url("./Pretendard-Bold.otf") format("opentype");
+
+  /* 사용할 폰트의 기본 스타일 */
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-display: fallback;
+
+  src: url("./Pretendard-SemiBold.otf") format("opentype");
+
+  /* 사용할 폰트의 기본 스타일 */
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-display: fallback;
+
+  src: url("./Pretendard-Medium.otf") format("opentype");
+
+  /* 사용할 폰트의 기본 스타일 */
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-display: fallback;
+
+  src: url("./Pretendard-Regular.otf") format("opentype");
+  /* 사용할 폰트의 기본 스타일 */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-display: fallback;
+
+  src: url("./Pretendard-Light.otf") format("opentype");
+
+  /* 사용할 폰트의 기본 스타일 */
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-display: fallback;
+
+  src: url("./Pretendard-ExtraLight.otf") format("opentype");
+
+  /* 사용할 폰트의 기본 스타일 */
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-display: fallback;
+
+  src: url("./Pretendard-Thin.otf") format("opentype");
+
+  /* 사용할 폰트의 기본 스타일 */
+  font-weight: 100;
+  font-style: normal;
+}
