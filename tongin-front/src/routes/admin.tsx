@@ -1,17 +1,35 @@
 import styled from "styled-components";
-import AdminHeader from "../css/admin/admin";
+import * as S from "../styles/admin.styled";
 
-// const Header = styled.div`
-//   width: 400px;
-//   height: 100px;
-//   background-color: red;
-// `;
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 82%;
+  height: 60vh;
+  outline: 1px dashed green;
+`;
+
+const Button = styled.button`
+  width: 180px;
+  height: 50px;
+`;
 
 export default function Admin() {
   return (
     <>
-      <AdminHeader>헤더영역</AdminHeader>
-      <h1>관리자페이지</h1>
+      <Container>
+        <Wrapper>
+          <h1>관리자페이지</h1>
+          <Button>사원 추가하기</Button>
+        </Wrapper>
+      </Container>
     </>
   );
 }
